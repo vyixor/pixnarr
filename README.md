@@ -6,9 +6,9 @@
 
 **Turn any script into a cinematic video — no editing skills required.**
 
-[![Release](https://img.shields.io/github/v/release/YOUR_USERNAME/pixnarr?style=flat-square&color=00e5a0)](https://github.com/YOUR_USERNAME/pixnarr/releases/latest)
+[![Release](https://img.shields.io/github/v/release/vyixor/pixnarr?style=flat-square&color=00e5a0)](https://github.com/vyixor/pixnarr/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows-informational?style=flat-square)](https://github.com/YOUR_USERNAME/pixnarr/releases/latest)
+[![Platform](https://img.shields.io/badge/platform-Windows-informational?style=flat-square)](https://github.com/vyixor/pixnarr/releases/latest)
 [![Python](https://img.shields.io/badge/Python-3.11-yellow?style=flat-square)](https://python.org)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square)](https://nextjs.org)
 
@@ -52,7 +52,7 @@ No Python, no Node.js, no FFmpeg install required — everything is bundled.
 ## 🚀 Getting Started (App Users)
 
 ### 1. Install the app
-Download `pixnarr-setup-v1.0.0.exe` from the [Releases page](https://github.com/YOUR_USERNAME/pixnarr/releases/latest) and run the installer.
+Download `pixnarr-setup-v1.0.0.exe` from the [Releases page](https://github.com/vyixor/pixnarr/releases/latest) and run the installer.
 
 ### 2. Get your API keys
 Pixnarr needs two free API keys to work. See [**Getting Your API Keys**](#-getting-your-api-keys) below.
@@ -139,7 +139,7 @@ Want to run from source or contribute? Follow these steps.
 ### Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pixnarr.git
+git clone https://github.com/vyixor/pixnarr.git
 cd pixnarr
 ```
 
@@ -348,6 +348,6 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 <div align="center">
 
-Made with ❤️ · [Report a Bug](https://github.com/YOUR_USERNAME/pixnarr/issues) · [Request a Feature](https://github.com/YOUR_USERNAME/pixnarr/issues)
+Made with ❤️ · [Report a Bug](https://github.com/vyixor/pixnarr/issues) · [Request a Feature](https://github.com/vyixor/pixnarr/issues)
 
 </div>
