@@ -112,10 +112,10 @@ All generated content is saved on your machine:
 
 | Folder | Contents |
 |--------|----------|
-| `resources/backend/rendered_videos/` | Final rendered `.mp4` videos |
-| `resources/backend/rendered_videos/scenes/` | Per-scene videos (when using Scene Export) |
-| `resources/backend/rendered_images/` | All AI-generated scene images |
-| `resources/backend/rendered_audios/` | Downloaded background music tracks |
+| `C:\Users\VJ\PixNarr/rendered_videos/` | Final rendered `.mp4` videos |
+| `C:\Users\VJ\PixNarr/rendered_videos/scenes/` | Per-scene videos (when using Scene Export) |
+| `C:\Users\VJ\PixNarr/rendered_images/` | All AI-generated scene images |
+| `C:\Users\VJ\PixNarr/rendered_audios/` | Downloaded background music tracks |
 
 These folders are created automatically next to the backend executable when the app first runs.
 
@@ -173,7 +173,7 @@ venv\Scripts\activate        # Windows
 # Install dependencies
 pip install -r requirements.txt
 
-# Create .env file with your API keys
+# Create .env file with your API keys if you want
 copy .env.example .env       # Windows
 # cp .env.example .env       # Mac/Linux
 ```
@@ -183,6 +183,22 @@ Edit `.env`:
 GROQ_API_KEY=gsk_your_key_here
 WORKER_AI_ACCOUNT_API=your_account_id.your_api_key
 ```
+
+Or edit `preferences.conf`:
+```txt
+rendered_videos_path=C:\Users\YourName\PixNarr\rendered_videos
+rendered_audios_path=C:\Users\YourName\PixNarr\rendered_audios
+rendered_images_path=C:\Users\YourName\PixNarr\rendered_images
+GROQ_API_KEY=gsk_your_key_here
+WORKER_AI_ACCOUNT_API=your_account_id.your_api_key
+APIPORT=8080
+STARTUP_WAIT_SECONDS=90
+generate_image=yes
+```
+preferences.conf is generated in the home directory on first launch
+windows C:\Users\YourName\PixNarr
+macOS: /Users/YourName/PixNarr
+Linux/BSD: /home/YourName/PixNarr or /usr/home/YourName/PixNarr 
 
 Place FFmpeg binaries in `backend/ffmpeg_bin/`:
 - Download from [gyan.dev/ffmpeg/builds](https://www.gyan.dev/ffmpeg/builds/) → `ffmpeg-release-essentials.zip`
@@ -311,6 +327,9 @@ A: Locally on your machine at `C:\Users\YourName\PixNarr\preferences.conf` — a
 
 **Q: Can I use my own images instead of AI-generated ones?**
 A: Yes — open any scene's edit panel and click **Upload Image** to replace the generated image with your own.
+
+**Q: Can I stop pixnar from autogenerating images?**
+A: Yes — edit the preferences.conf file and set **generate_image** to `no` to stop PixNarr from generating the images.
 
 **Q: Can I use my own voiceover instead of uploading per-scene audio?**
 A: Yes — on the scene processing page, upload a single full voiceover audio file. The app automatically splits it by scene timing.
