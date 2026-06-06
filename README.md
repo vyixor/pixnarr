@@ -195,10 +195,10 @@ APIPORT=8080
 STARTUP_WAIT_SECONDS=90
 generate_image=yes
 ```
-preferences.conf is generated in the home directory on first launch
-windows C:\Users\YourName\PixNarr
-macOS: /Users/YourName/PixNarr
-Linux/BSD: /home/YourName/PixNarr or /usr/home/YourName/PixNarr 
+`preferences.conf` is generated in the home directory on first launch <br>
+windows C:\Users\YourName\PixNarr <br>
+macOS: /Users/YourName/PixNarr <br>
+Linux/BSD: /home/YourName/PixNarr or /usr/home/YourName/PixNarr <br>
 
 Place FFmpeg binaries in `backend/ffmpeg_bin/`:
 - Download from [gyan.dev/ffmpeg/builds](https://www.gyan.dev/ffmpeg/builds/) → `ffmpeg-release-essentials.zip`
