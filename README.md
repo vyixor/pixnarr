@@ -337,6 +337,9 @@ A: Yes — on the scene processing page, upload a single full voiceover audio fi
 **Q: The app says "did not start in time" on launch.**
 A: Go to **Settings** → increase **Startup Wait Time** to 120 or 180 seconds. This is common on first launch because the backend extracts its files to cache.
 
+**Q: Pixnarr did not load my api keys settings on first launch**
+A: Make sure the settings is saved correctly then close pixnarr_backend in task manager and restart pixnarr
+ 
 **Q: Can I run multiple Cloudflare accounts for more image quota?**
 A: Yes — enter them comma-separated in Settings: `id1.key1,id2.key2,id3.key3`. The app cycles through them automatically.
 
