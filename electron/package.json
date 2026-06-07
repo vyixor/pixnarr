@@ -1,0 +1,64 @@
+{
+  "name": "pixnarr",
+  "version": "1.0.0",
+  "description": "Pixnarr \u2014 AI Video Studio",
+  "main": "main.js",
+  "author": "Pixnarr",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "electron .",
+    "build": "electron-builder --win"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.pixnarr.app",
+    "productName": "Pixnarr",
+    "copyright": "Copyright \u00a9 2026 Pixnarr",
+    "icon": "assets/icon.png",
+    "directories": {
+      "output": "../dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "assets/**"
+    ],
+    "extraResources": [
+      {
+        "from": "../backend/dist/pixnarr_backend.exe",
+        "to": "backend/pixnarr_backend.exe"
+      },
+      {
+        "from": "../backend/dist/launch_backend.bat",
+        "to": "backend/launch_backend.bat"
+      },
+      {
+        "from": "../pixlayout/dist/frontend",
+        "to": "frontend"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Pixnarr"
+    }
+  }
+}
