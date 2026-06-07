@@ -11,6 +11,9 @@
 [![Platform](https://img.shields.io/badge/platform-Windows-informational?style=flat-square)](https://github.com/vyixor/pixnarr/releases/latest)
 [![Python](https://img.shields.io/badge/Python-3.11-yellow?style=flat-square)](https://python.org)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square)](https://nextjs.org)
+[![Downloads](https://img.shields.io/github/downloads/vyixor/pixnarr/total)](https://github.com/vyixor/pixnarr/releases)
+
+
 
 [**Download App**](#-download) · [**Features**](#-features) · [**Setup (Dev)**](#-developer-setup) · [**API Keys**](#-getting-your-api-keys)
 
